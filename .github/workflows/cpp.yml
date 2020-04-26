@@ -18,3 +18,8 @@ jobs:
 
       - name: run
         run: ./a.out
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: a.out binary
+          path: a.out
